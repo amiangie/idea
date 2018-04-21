@@ -1,8 +1,20 @@
 // Links
 
-a {
-  text-decoration: underline;
+$clr-link: $color-red;
 
+a {
+  text-decoration: none;
+  
+  &:not([class]) {
+    color: $clr-link;
+    border-bottom: 1px solid; 
+    transition: color .25s;
+    
+    &:hover {
+      transition: color .25s;
+    }
+  }
+  
   &:hover {
     color: inherit;
   }

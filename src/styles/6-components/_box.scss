@@ -1,0 +1,33 @@
+// Box component
+
+$clr-bg: $color-blue;
+$clr-header-bg: $color-middle-grey;
+$clr-heading-text: $color-light-grey;
+
+.c-box {
+  
+  &__header {
+    background: $clr-header-bg;
+    padding: 2.4rem 3.6rem;
+    border-radius: 1rem 1rem 0 0;
+    
+    + .c-box__content {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  
+  &__heading {
+    font-size: 1em;
+    font-weight: bold;
+    color: $clr-heading-text;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  &__content {
+    background: $clr-bg;
+    border-radius: 1rem;
+    padding: 4rem 3.6rem 5.8rem 3.6rem;
+  }
+}

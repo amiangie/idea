@@ -1,0 +1,11 @@
+// General layout
+
+.o-page {
+  display: grid;
+  height: 100%;
+    
+  &__part {
+    width: 48rem;
+    margin: auto;
+  }
+}
