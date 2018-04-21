@@ -1,0 +1,48 @@
+// Accordion
+
+$clr-header-bg: $color-light-blue;
+$clr-header-hover: $color-red;
+$header-border-radius: $global_border-radius;
+
+.c-accordion {
+  list-style: none;
+  margin: 0;
+  
+  &__item {
+    margin-bottom: 0;
+    
+    &:last-child {
+      .c-accordion__content {
+        padding-bottom: 0;
+      }
+    }
+  }
+  
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: .86em;
+    font-weight: 700;
+    background: $clr-header-bg;
+    border-radius: $header-border-radius;
+    transition: all .25s;
+    cursor: pointer;
+    
+    &:hover {
+      color: $clr-header-hover;
+      transition: all .25s;
+    }
+    
+    &:after {
+      content: '\f004';
+      font-family: "fontello";
+      font-weight: normal;
+      font-size: .8em;
+    }
+  }
+  
+  &__content {
+    padding: 1rem 0;
+  }
+}

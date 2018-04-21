@@ -18,6 +18,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
+  line-height: 1;
   position: relative;
   cursor: pointer;
   
@@ -28,7 +29,7 @@ input[type="checkbox"] + label {
     vertical-align: middle;
     height: $form-checkbox__height;
     width: $form-checkbox__height;
-    margin-right: 1em;
+    margin-right: .86em;
     border-radius: $form-checkbox__boradius;
     background: $form-checkbox__bgcolor;
   }
@@ -56,8 +57,28 @@ input[type="checkbox"]:checked + label {
     position: absolute;
     display: block;
     left: .3em;
+    top: .4em;
+    border-radius: .1rem;
+    transform: rotate(-45deg);
+  }
+}
+
+input[type="checkbox"]:indeterminate + label {
+  // indeterminate checkbox box
+  &:before {
+    background: $form-checkbox__bgcolor;
+  }
+  
+  // indeterminate checkbox "tick"
+  &:after {
+    position: absolute;
+    display: block;
+    height: 1.6rem;
+    width: 0;
+    left: .75em;
     top: .2em;
     border-radius: .1rem;
+    border-bottom: none;
     transform: rotate(-45deg);
   }
 }

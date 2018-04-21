@@ -2,19 +2,197 @@
 {% set pageName = 'Index' %}
 
 {% block content %}
- 
+     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <div class="o-page__item">
     <section class="c-box">
       <header class="c-box__header">
         <h1 class="c-box__heading">Vali mõõdud</h1>
       </header>
       <div class="c-box__content">
-        ldsf jf lsjdflsjfdlk sjlfj slfdj
-
-        <div class="c-checkbox">
-          <input type="checkbox" id="cash_only" value="cash" name="offers">
-          <label for="cash_only">Cash only</label>
-        </div>
+        
+        <ul class="c-accordion" 
+            aria-label="Vali bännerite mõõdud genereerimiseks" 
+            role="tablist">
+          <li class="c-accordion__item">
+            <div class="c-accordion__header"
+                 aria-controls="accordion-1" 
+                 aria-expanded="false" 
+                 aria-selected="false" 
+                 id="button-accordion-1" 
+                 role="tab">
+              <input type="checkbox" 
+                   name="delfi" 
+                   id="delfi" 
+                   aria-controls="delfi-1 delfi-2 delfi-3">
+              <label for="delfi">Delfi</label>
+            </div>
+            <div class="c-accordion__content"
+                 id="accordion-1" 
+                 aria-labelledby="button-accordion-1" 
+                 aria-hidden="true" 
+                 role="tabpanel">
+              <ul class="c-checkboxlist">
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="delfi-1" id="delfi-1">
+                  <label for="delfi-1">
+                    <span class="c-checkboxlist__size">
+                      300x250
+                    </span>
+                    <span>
+                      - Lehepäis
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="delfi-2" id="delfi-2">
+                  <label for="delfi-2">
+                    <span class="c-checkboxlist__size">
+                      728x90
+                    </span>
+                    <span>
+                      - Mobiil
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="delfi-3" id="delfi-3">
+                  <label for="delfi-3">
+                    <span class="c-checkboxlist__size">
+                      300x250
+                    </span>
+                    <span>
+                      - Lehepäis
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="c-accordion__item">
+            <div class="c-accordion__header"
+                 aria-controls="accordion-2" 
+                 aria-expanded="false" 
+                 aria-selected="false" 
+                 id="button-accordion-2" 
+                 role="tab">
+              <input type="checkbox" 
+                   name="google" 
+                   id="google" 
+                   aria-controls="google-1 google-2 google-3">
+              <label for="google">Google</label>
+            </div>
+            <div class="c-accordion__content"
+                 id="accordion-2" 
+                 aria-labelledby="button-accordion-2" 
+                 aria-hidden="true" 
+                 role="tabpanel">
+              <ul class="c-checkboxlist">
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="google-1" id="google-1">
+                  <label for="google-1">
+                    <span class="c-checkboxlist__size">
+                      300x250
+                    </span>
+                    <span>
+                      - Lehepäis
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="google-2" id="google-2">
+                  <label for="google-2">
+                    <span class="c-checkboxlist__size">
+                      728x90
+                    </span>
+                    <span>
+                      - Mobiil
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="c-checkboxlist__item">
+                  <input type="checkbox" name="google-3" id="google-3">
+                  <label for="google-3">
+                    <span class="c-checkboxlist__size">
+                      300x250
+                    </span>
+                    <span>
+                      - Lehepäis
+                    </span>
+                    <span class="c-checkboxlist__action icon -preview">
+                      <span class="u-visuallyhidden">Preview</span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+<!--
+          <li>
+            <input type="checkbox" 
+                   name="google" 
+                   id="google" 
+                   tabindex="0"
+                   aria-controls="google-1 google-2 google-3">
+            <label for="google">Google</label>
+            <ul>
+              <li>
+                <input type="checkbox" name="google-1" id="google-1">
+                <label for="google-1">
+                  <span>
+                    300x250
+                  </span>
+                  <span>
+                    - Lehepäis
+                  </span>
+                  <span class="icon -preview" aria-hidden="true"></span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="google-2" id="google-2">
+                <label for="google-2">
+                  <span>
+                    728x90
+                  </span>
+                  <span>
+                    - Mobiil
+                  </span>
+                  <span class="icon -preview" aria-hidden="true"></span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="google-3" id="google-3">
+                <label for="google-3">
+                  <span>
+                    300x250
+                  </span>
+                  <span>
+                    - Lehepäis
+                  </span>
+                  <span class="icon -preview" aria-hidden="true"></span>
+                </label>
+              </li>
+            </ul>
+          </li>
+-->
+        </ul>
+        
       </div>
     </section>
     
@@ -25,6 +203,7 @@
       <span class="icon -download" aria-hidden="true"></span>
     </button>
   </div>
+  
   
 {% endblock %}
 
