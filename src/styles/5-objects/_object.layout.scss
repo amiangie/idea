@@ -1,11 +1,16 @@
 // General layout
 
+$ele-gap-mobile: 1.5rem;
+$ele-width: 48rem;
+
 .o-page {
   display: grid;
+  grid-template-columns: minmax(auto, $ele-width + $ele-gap-mobile * 2);
+  justify-content: center;
+  align-items: center;
   height: 100%;
-    
-  &__part {
-    width: 48rem;
-    margin: auto;
+  
+  &__item {
+    margin: 0 $ele-gap-mobile;
   }
 }
