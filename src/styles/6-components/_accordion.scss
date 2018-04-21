@@ -49,6 +49,7 @@ $header-border-radius: $global_border-radius;
       
       ~ .c-accordion__content {
         visibility: visible;
+        overflow: visible;
         max-height: 8em;
         padding: 1rem 0 .3rem 0;
       }

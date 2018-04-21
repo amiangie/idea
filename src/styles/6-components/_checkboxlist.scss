@@ -18,15 +18,21 @@ $action-border-radius: $global_border-radius;
     flex-basis: 11rem;
   }
   
+  &__actions {
+    position: relative;
+    margin-left: auto;
+  }
+  
   &__action {
-    visibility: hidden;
-    opacity: 0;
+    display: inline-block;
     font-size: 1.2em;
-    padding: .5rem .5rem;
-    margin: -.5rem 0 -.5rem auto;
+    padding: .3rem .5rem;
+    margin: -.3rem 0 -.3rem auto;
     border: 1px solid transparent;
     border-radius: $action-border-radius;
     transition: all .25s;
+    visibility: hidden;
+    opacity: 0;
     
     &:hover {
       color: $clr-action-hover;
