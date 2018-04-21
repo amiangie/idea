@@ -1,0 +1,13 @@
+{
+  "generator-panache": {
+    "config": {
+      "name": "Idea",
+      "author": "angie",
+      "nameSlug": "idea",
+      "nameCamel": "Idea",
+      "features": {
+        "has_babel": true
+      }
+    }
+  }
+}
