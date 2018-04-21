@@ -2,6 +2,8 @@
 
 $clr-header-bg: $color-light-blue;
 $clr-header-hover: $color-red;
+$clr-header-bg-active: $color-red;
+$clr-header-active: $color-white;
 $header-border-radius: $global_border-radius;
 
 .c-accordion {
@@ -9,7 +11,7 @@ $header-border-radius: $global_border-radius;
   margin: 0;
   
   &__item {
-    margin-bottom: 0;
+    margin-bottom: .7rem;
     
     &:last-child {
       .c-accordion__content {
@@ -40,9 +42,39 @@ $header-border-radius: $global_border-radius;
       font-weight: normal;
       font-size: .8em;
     }
+    
+    &.-expanded {
+      background: $clr-header-bg-active;
+      color: $clr-header-active;
+      
+      ~ .c-accordion__content {
+        visibility: visible;
+        max-height: 8em;
+        padding: 1rem 0 .3rem 0;
+      }
+      
+      &:after {
+        transform: scaleY(-1);  
+      }
+    }
   }
   
   &__content {
-    padding: 1rem 0;
+    visibility: hidden;
+    max-height: 0;
+    min-height: 1px;
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: all .5s cubic-bezier(.18,.88,.52,1.67);
   }
 }
+
+// just in case
+.no-js .c-accordion__content {
+  height: auto;
+  max-height: 10em;
+  visibility: visible;
+  overflow: visible;
+  padding: 1rem 0 .3rem 0;
+}
+
