@@ -36,3 +36,16 @@ $border-radius: $global_border-radius * 2;
     margin-top: 2rem;
   }
 }
+
+@include bp-mobile {
+  .c-box {
+    
+    &__header {
+      padding: 1.4rem 1.6rem;
+    }
+    
+    &__content {
+      padding: 2rem 1.6rem 2.8rem 1.6rem;
+    }
+  }
+}
