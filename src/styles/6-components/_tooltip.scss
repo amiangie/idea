@@ -35,3 +35,18 @@ $clr-bg: $color-light-blue;
   pointer-events: auto;
   transform: translateY(0px);
 }
+
+@include bp-mobile {
+  .c-tooltip {
+    padding: 1rem;
+    top: -4rem;
+    
+    &:after {
+      top: 3.8rem;
+    }
+    
+    &__image {
+      width: 21.5rem;
+    }
+  }
+}
