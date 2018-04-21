@@ -1,0 +1,49 @@
+// General button styles
+
+$border-radius: $global_border-radius;
+$clr-bg--active: $color-red;
+$clr-text--active: $color-white;
+$clr-border--disabled: rgba(#54657e, .47);
+$clr-text--disabled: rgba($color-light-grey, .2);
+$clr-bg--hover: $color-dark-red;
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.5rem 3.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $clr-text--active;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $border-radius;
+  background: $clr-bg--active;
+  cursor: pointer;
+  transition: background .25s;
+  
+  small {
+    font-weight: 300;
+    text-transform: none;
+  }
+  
+  &:hover {
+    background: $clr-bg--hover; 
+    transition: background .25s;
+  }
+  
+  &:disabled {
+    color: $clr-text--disabled;
+    border: 1px solid $clr-border--disabled;
+    background: transparent;
+    cursor: not-allowed;
+  }
+}
+
+@include bp-mobile {
+  button {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+}

@@ -31,4 +31,8 @@ $border-radius: $global_border-radius * 2;
     border-radius: $border-radius;
     padding: 4rem 3.6rem 5.8rem 3.6rem;
   }
+  
+  + * {
+    margin-top: 2rem;
+  }
 }
