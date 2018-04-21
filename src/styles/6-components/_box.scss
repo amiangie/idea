@@ -3,6 +3,7 @@
 $clr-bg: $color-blue;
 $clr-header-bg: $color-middle-grey;
 $clr-heading-text: $color-light-grey;
+$border-radius: $global_border-radius * 2;
 
 .c-box {
   
@@ -27,7 +28,7 @@ $clr-heading-text: $color-light-grey;
   
   &__content {
     background: $clr-bg;
-    border-radius: 1rem;
+    border-radius: $border-radius;
     padding: 4rem 3.6rem 5.8rem 3.6rem;
   }
 }
