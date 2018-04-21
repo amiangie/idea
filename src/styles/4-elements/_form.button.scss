@@ -45,5 +45,13 @@ button {
   button {
     flex-direction: column;
     padding: 1.5rem 2rem;
+    
+    .icon {
+      display: none;
+    }
+    
+    small {
+      display: block;
+    }
   }
 }
