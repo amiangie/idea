@@ -19,6 +19,8 @@ $action-border-radius: $global_border-radius;
   }
   
   &__action {
+    visibility: hidden;
+    opacity: 0;
     font-size: 1.2em;
     padding: .5rem .5rem;
     margin: -.5rem 0 -.5rem auto;
@@ -31,5 +33,12 @@ $action-border-radius: $global_border-radius;
       border: 1px solid $clr-action-border;
       transition: all .25s;
     }
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  .c-checkboxlist__action {
+    visibility: visible;
+    opacity: 1;
   }
 }
