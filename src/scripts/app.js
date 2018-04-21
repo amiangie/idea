@@ -63,6 +63,12 @@ const button = document.getElementById('download');
   });
   
   checkallBox.addEventListener('click', function(event) {
+    const accordionPanel = this.parentElement;
+
+    if(this.checked && accordionPanel.classList.contains('-expanded')) {
+      accordionPanel.click();
+    }
+    
     checkboxes.forEach(checkbox => {
       checkbox.checked = this.checked;
     });
