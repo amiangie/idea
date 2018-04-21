@@ -8,9 +8,9 @@ $ele-width: 48rem;
   grid-template-columns: minmax(auto, $ele-width + $ele-gap-mobile * 2);
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
   
   &__item {
-    margin: 0 $ele-gap-mobile;
+    margin: $ele-gap-mobile;
   }
 }
