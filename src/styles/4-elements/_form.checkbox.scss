@@ -4,6 +4,7 @@ $form-checkbox__boradius: $global_border-radius;
 $form-checkbox__tick-color: $color-light-grey;
 $form-checkbox__bgcolor: $color-middle-grey;
 $form-checkbox__bgcolor--selected: $color-middle-grey;
+$form-checkbox__height: 2.5rem;
 
 input[type="checkbox"] {
   margin: -1px;
@@ -23,9 +24,9 @@ input[type="checkbox"] + label {
   &:before{
     content: '';
     display: inline-block;
-    vertical-align: sub;
-    height: 1.14em;
-    width: 1.14em;
+    vertical-align: middle;
+    height: $form-checkbox__height;
+    width: $form-checkbox__height;
     margin-right: 1em;
     border-radius: $form-checkbox__boradius;
     background: $form-checkbox__bgcolor;
@@ -33,13 +34,13 @@ input[type="checkbox"] + label {
   
   // checkbox tick
   &:after {
-    content: '\e6c8';
+    content: '';
     display: none;
-    font-family: 'font-icons';
-    font-size: 1rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: $form-checkbox__tick-color;
+    height: .9rem;
+    width: 1.6rem;
+    border-left: .2rem solid $form-checkbox__tick-color;
+    border-bottom: .2rem solid $form-checkbox__tick-color;
+    
   }
 }
 
@@ -53,10 +54,9 @@ input[type="checkbox"]:checked + label {
   &:after {
     position: absolute;
     display: block;
-    left: 0.3em;
-    top: 50%;
-    line-height: 1;
-    transform: translateY(-50%);
+    left: .3em;
+    top: .2em;
+    border-radius: .1rem;
+    transform: rotate(-45deg);
   }
 }
-
