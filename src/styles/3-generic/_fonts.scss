@@ -1,1 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+//  Icon Fonts licenses
+//
+//
+//  ## MFG Labs
+//
+//     Copyright (C) 2012 by Daniel Bruce
+//
+//     Author:    MFG Labs
+//     License:   SIL (http://scripts.sil.org/OFL)
+//     Homepage:  http://www.mfglabs.com/
+//
+//
+//  ## Modern Pictograms
+//
+//     Copyright (c) 2012 by John Caserta. All rights reserved.
+//
+//     Author:    John Caserta
+//     License:   SIL (http://scripts.sil.org/OFL)
+//     Homepage:  http://thedesignoffice.org/project/modern-pictograms/
+//
+@font-face {
+  font-family: 'fontello';
+  src: url('../assets/fonts/fontello.eot?68797819');
+  src: url('../assets/fonts/fontello.eot?68797819#iefix') format('embedded-opentype'),
+       url('../assets/fonts/fontello.woff2?68797819') format('woff2'),
+       url('../assets/fonts/fontello.woff?68797819') format('woff'),
+       url('../assets/fonts/fontello.ttf?68797819') format('truetype'),
+       url('../assets/fonts/fontello.svg?68797819#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

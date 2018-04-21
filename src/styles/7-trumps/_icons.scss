@@ -1,0 +1,27 @@
+// Icons
+
+.icon {
+  &:before {
+    display: inline-block;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    speak: none;
+  }
+  
+  &.-download:before {
+    content: '\e800';
+  }
+  
+  &.-preview:before {
+    content: '\e801';
+  }
+  
+  &.-open:before {
+    content: '\f004';
+  }
+}
