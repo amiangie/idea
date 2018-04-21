@@ -48,3 +48,11 @@ input[type="checkbox"]:checked + label {
     opacity: 1;
   }
 }
+
+@include bp-mobile {
+  .c-checkboxlist {
+    &__size {
+      flex-basis: 8rem;
+    }
+  }
+}

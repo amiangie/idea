@@ -7,10 +7,16 @@ $ele-width: 48rem;
   display: grid;
   grid-template-columns: minmax(auto, $ele-width + $ele-gap-mobile * 2);
   justify-content: center;
-  align-items: center;
+  padding-top: 7rem;
   min-height: 100%;
   
   &__item {
     margin: $ele-gap-mobile;
+  }
+}
+
+@include bp-mobile {
+  .o-page {
+    padding-top: 2rem;
   }
 }
