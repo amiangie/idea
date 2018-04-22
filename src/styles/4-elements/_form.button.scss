@@ -4,6 +4,7 @@ $border-radius: $global_border-radius;
 $clr-bg--active: $color-red;
 $clr-text--active: $color-white;
 $clr-border--disabled: rgba(#54657e, .47);
+$clr-border--focus: $color-light-grey;
 $clr-text--disabled: rgba($color-light-grey, .2);
 $clr-bg--hover: $color-dark-red;
 
@@ -38,6 +39,10 @@ button {
     border: 1px solid $clr-border--disabled;
     background: transparent;
     cursor: not-allowed;
+  }
+  
+  &:focus {
+    border: 1px solid $clr-border--focus;
   }
 }
 

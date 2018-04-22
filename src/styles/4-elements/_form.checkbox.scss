@@ -82,3 +82,10 @@ input[type="checkbox"]:indeterminate + label {
     transform: rotate(-45deg);
   }
 }
+
+input[type="checkbox"]:focus + label {
+  // focus checkbox box
+  &:before {
+    border: 1px solid $form-checkbox__tick-color;
+  }
+}
